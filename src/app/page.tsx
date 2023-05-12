@@ -1,5 +1,3 @@
-"use client";
-
 import { FC, HTMLAttributes } from "react";
 
 export interface HomeProps extends HTMLAttributes<HTMLDivElement>{

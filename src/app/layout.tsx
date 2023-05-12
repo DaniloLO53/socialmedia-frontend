@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
-import { StyledResets } from "../styles";
-import ThemeWrapper from "../styles/themeWrapper";
+import ThemeWrapper from "./StyleWrapperClient";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +16,6 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={inter.className}>
-        <StyledResets />
         <ThemeWrapper>
           {children}
         </ThemeWrapper>
