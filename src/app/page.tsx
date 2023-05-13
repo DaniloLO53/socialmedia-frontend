@@ -1,18 +1,11 @@
-import { FC, HTMLAttributes } from "react";
+import Button from "../components/ui/Button";
 
-export interface HomeProps extends HTMLAttributes<HTMLDivElement>{
-  generic?: string
-}
-
-const Home: FC<HomeProps> = ({
-  children,
-  ...props
-}) => {
+export default async function Home() {
   return (
-    <div>
-      hello
-    </div>
+    <main>
+      <Button>
+        click here
+      </Button>
+    </main>
   );
-};
-
-export default Home;
+}
